@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+	    let user = {} 
+		user.name = "Elizabeth"
+        user.surname = "Rizhikh"
+		user.name  = "Cherry"
+		delete user.name
+		console.log(user)
+		
+		const userl = { name: 'Elizabeth'}
+	    const admil = userl
+		console.log(userl)
+		console.log(user)
+		
+		const user2 = { name: 'Elizabeth' }
+		const admin = user2 
+		
+		admin.name= "Rizhikh"
+		
+		console.log(user2)
+		console.log(admin)
+		
+		const user3 = {
+		    name: "Elizabeth",
+            age: 18
+        }
+
+        const userCopy = Object.assign({}, user3)
+        
+        userCopy.name = "Woman"
+
+        console.log(user3)
+        console.log(userCopy)
+		
+		let salaries = {
+		Elizabeth: 100,
+		Rizhikh: 160,
+		Woman: 130
+}
+
+const sum = salaries.Elizabeth + salaries.Rizhikh + salaries.Woman
+console.log(sum) 
+	</script>
+  </body>
+</html>
